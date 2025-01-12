@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        background-color: #8EC5FC;
+        background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    }
+    div {
+        padding: 2rem;
+        border: 1px solid rgb(230, 218, 218);
+        width: fit-content;
+        text-align: center;
+        background-color: #8EC5FC;
+        background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+        border-radius: 20px;
+    }
+
+    input {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    body {
+        padding: 5rem;
+    }
+
+    button>a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        color: rgb(85, 40, 40);
+    }
+
+    button {
+        border: none;
+        padding: 1rem;
+        background-color: #8EC5FC;
+        background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    }
+
+    button>a:hover {
+        color: rgb(27, 13, 223);
+    }
+</style>
+
+<body>
+    <div>
+        <h2>Login Page</h2>
+        <form action="./login.html" method="">
+            <input type="email" placeholder="Email" required
+                pattern="[a-zA-Z0-9]+@(gmail|yahoo|outlook)+(.in|.org|.com)">
+            <br><br>
+            <input type="text" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[\d]).{4,8}" placeholder="Passward">
+            <br><br>
+            <input type="submit" value="login">
+        </form><br>
+        <button><a href="./register.html" target="_blank">Register</a></button>
+    </div>
+</body>
+
+
+</html>

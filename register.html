@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <style>
+        
         body {
             display: flex;
             justify-content: center;
@@ -28,23 +29,38 @@
             font-size: 1.2rem;
             padding: 0.5rem;
         }
+        a{
+            text-decoration: none;
+            color: blueviolet;
+            padding: 0.5rem;
+            background-color: #eee;
+            border-radius: 15px;
+        }
+        p{
+            font-size: 1.2rem;
+            color: crimson;
+            font-style: oblique;
+        }
+        
     </style>
+    <script type="module" src="index.js" defer></script>
 </head>
 
 <body>
     <div>
         <h2>Register Page</h2>
-        <form action="./login.html" method="">
+        <!-- <form action="./login.html" method=""> -->
 
-            <input type="text" id="email" name="email" placeholder="Enter Email" required
-                pattern="[a-zA-Z0-9]+@(gmail|yahoo|outlook)+(.in|.org|.com)">
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
             <br><br>
-            <input type="password" id="password" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[\d]).{4,8}"
-                placeholder="Enter Passward">
+            <input type="password" id="password" name="password" placeholder="Password" required>
             <br><br>
             <!-- <input type="text" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[\d]).{4,8}" placeholder="re-enter Passward"><br><br> -->
 
-            <input type="submit" id="signUp" name="signUp" value="Sign up">
+            <input type="submit" id="submit" name="submit" value="Sign up">
+            <br><br>
+            <p>Already have an account ? &#128526;</p>
+            <a href="login.html">Login</a>
         </form>
     </div>
 

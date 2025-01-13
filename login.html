@@ -49,19 +49,25 @@
     button>a:hover {
         color: rgb(27, 13, 223);
     }
+    p{
+        font-style: oblique;
+        font-size: 1.2rem;
+        color: crimson;
+    }
 </style>
+<script type="module" src="login.js" defer></script>
 
 <body>
     <div>
         <h2>Login Page</h2>
-        <form action="./login.html" method="">
-            <input type="email" placeholder="Email" required
-                pattern="[a-zA-Z0-9]+@(gmail|yahoo|outlook)+(.in|.org|.com)">
+        <!-- <form action="https://vinayjanjirala.github.io/task-js-part/" method=""> -->
+            <input type="email" id="email" name="email" placeholder="Email" required>
             <br><br>
-            <input type="text" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[\d]).{4,8}" placeholder="Passward">
+            <input type="password" id="password" name="password" placeholder="Passward" >
             <br><br>
-            <input type="submit" value="login">
+            <input type="submit" id="submit" value="login">
         </form><br>
+        <p>new User? Register below..&#128513;	</p>
         <button><a href="./register.html" target="_blank">Register</a></button>
     </div>
 </body>
